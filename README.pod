@@ -1,0 +1,52 @@
+=pod
+
+=head1 NAME
+
+MooseX::Types::PerlVersion - L<Perl::Version> type for Moose classes
+
+=head1 VERSION
+
+version v0.1.0
+
+=head1 SYNOPSIS
+
+  use MooseX::Types::PerlVersion qw(PerlVersion);
+
+  has version => (
+      is     => 'ro',
+      isa    => PerlVersion,
+      coerce => 1,
+  );
+
+=head1 DESCRIPTION
+
+This package provides Moose types for L<Perl::Version>. It also provides
+coercion from C<Str> and C<Num> Moose types.
+
+=head1 EXPORT
+
+None by default, you'll usually want to request C<PerlVersion> explicitly.
+
+=head1 SEE ALSO
+
+=over 4
+
+=item L<Perl::Version>
+
+=item L<Moose::Util::TypeConstraints>
+
+=item L<Moose>
+
+=back
+
+=head1 AUTHOR
+
+Roman F. <romanf@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Roman F..
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
